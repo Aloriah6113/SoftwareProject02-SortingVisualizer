@@ -18,6 +18,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataGenerator.h" />
+    <ClInclude Include="ExperimentResult.h" />
+    <ClInclude Include="InsertionSort.h" />
+    <ClInclude Include="PerformanceTester.h" />
+    <ClInclude Include="QuickSort.h" />
+    <ClInclude Include="SortEvent.h" />
+    <ClInclude Include="SortingAlgorithm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DataGenerator.cpp" />
+    <ClCompile Include="InsertionSort.cpp" />
+    <ClCompile Include="PerformanceTester.cpp" />
+    <ClCompile Include="QuickSort.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -138,16 +153,6 @@
       <EnableSegmentHeap>true</EnableSegmentHeap>
     </Manifest>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Data.cpp" />
-    <ClCompile Include="Performance.cpp" />
-    <ClCompile Include="Sorting.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Data.h" />
-    <ClInclude Include="Performance.h" />
-    <ClInclude Include="Sorting.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
