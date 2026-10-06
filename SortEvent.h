@@ -1,6 +1,7 @@
 #pragma once
 
 enum class EventType {
+    SELECT,  // 값 선택
     COMPARE, // 두 값을 비교
     MOVE,    // 값을 다른 위치로 이동
     INSERT,  // 값을 특정한 위치에 삽입
