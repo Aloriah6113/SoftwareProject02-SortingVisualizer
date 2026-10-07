@@ -14,7 +14,7 @@ class SortEvent {
 public:
     SortEvent(
         EventType eventType,
-        int index1, 
+        int index1,  // COMPARE, INSERT에서 -1일 경우 key값을 의미(삽입 정렬)
         int index2
     )
         : eventType(eventType),
