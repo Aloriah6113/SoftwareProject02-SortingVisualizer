@@ -9,7 +9,7 @@ using std::vector;
  */
  // 삽입 정렬 알고리즘을 실행하고, 원본 배열을 수정한다.
 void InsertionSort::sort(vector<int>& data) {
-    for (int     i = 1; i < data.size(); i++) {
+    for (int i = 1; i < data.size(); i++) {
         int key = data[i];  // i는 key 값의 위치
         events.push_back(SortEvent(EventType::SELECT, i, -1));
         int index = i - 1;  // index가 정렬된 부분의 끝을 가리키도록 초기화
