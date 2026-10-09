@@ -11,6 +11,8 @@ enum class EventType {
     
     // --- Quick Sort ---
     PIVOT,   // Pivot 선택
+    LOW,     // Low 포인터 위치 갱신
+    HIGH,    // High 포인터 위치 갱신
     SWAP,    // 두 값을 교환
     SORTED,  // 정렬 완료된 원소 표시 (피봇 확정 등)
 };
