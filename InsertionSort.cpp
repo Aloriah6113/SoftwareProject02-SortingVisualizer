@@ -11,7 +11,7 @@ using std::vector;
 void InsertionSort::sort(vector<int>& data) {
     for (int i = 1; i < data.size(); i++) {
         int key = data[i];  // i는 key 값의 위치
-        events.push_back(SortEvent(EventType::SELECT, i, -1));
+        events.push_back(SortEvent(EventType::KEY, i, -1));
         int index = i - 1;  // index가 정렬된 부분의 끝을 가리키도록 초기화
         
         events.push_back(SortEvent(EventType::COMPARE, -1, index));
