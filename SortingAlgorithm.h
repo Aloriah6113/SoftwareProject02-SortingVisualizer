@@ -11,7 +11,7 @@ public:
     virtual ~SortingAlgorithm() = default;
 
     // 정렬 알고리즘을 실행하고, 원본 배열을 수정한다.
-    virtual void sort(std::vector<int>& data) = 0;
+    virtual void sort(std::vector<int>& data, bool recordEvents = true) = 0;
 
     // 정렬 과정에서 발생한 이벤트를 참조로 반환한다.
     const std::vector<SortEvent>& getEvents() const {
