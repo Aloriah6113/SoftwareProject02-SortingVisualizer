@@ -19,15 +19,13 @@ enum class EventType {
 
 class SortEvent {
 public: 
-    SortEvent(
-        EventType eventType,
-        int index1,  // COMPARE, INSERT에서 -1일 경우 key값을 의미(삽입 정렬)
-        int index2
-    )
-        : eventType(eventType),
-          index1(index1),
-          index2(index2)
-    {}
+    SortEvent(EventType eventType, int index1, int index2)  // COMPARE, INSERT에서 -1일 경우 key값을 의미(삽입 정렬)
+        : eventType(eventType), index1(index1), index2(index2) {}
+
+    // GUI의 이벤트 재생에 필요한 읽기 전용 접근자 (기존 필드·생성자 유지)
+    EventType getEventType() const { return eventType; }
+    int getIndex1() const { return index1; }
+    int getIndex2() const { return index2; }
 
 private:
     EventType eventType;
